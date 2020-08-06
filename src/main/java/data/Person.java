@@ -1,10 +1,18 @@
 package data;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.hibernate.validator.constraints.NotEmpty;
+
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 
 public class Person {
+    @NotEmpty
     private String name;
-    private int age;
+
+    @NotNull
+    @Min(1)
+    private Integer age;
 
     public Person() {
         // Needed by Jackson deserialization
@@ -21,7 +29,7 @@ public class Person {
     }
 
     @JsonProperty
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 }
