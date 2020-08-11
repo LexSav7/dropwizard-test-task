@@ -8,5 +8,5 @@ FROM openjdk:8-jdk-alpine
 COPY --from=builder /dropwizard-test-task/target/dropwizard-test-task-1.0.0.jar ./
 COPY --from=builder /dropwizard-test-task/config-docker.yml ./
 
-CMD java -jar dropwizard-test-task-1.0.0 db migrate config-docker.yml && java -jar dropwizard-test-task-1.0.0 server config-docker.yml
+CMD java -jar dropwizard-test-task-1.0.0.jar db migrate config-docker.yml && java -jar dropwizard-test-task-1.0.0.jar server config-docker.yml
 EXPOSE 8080
