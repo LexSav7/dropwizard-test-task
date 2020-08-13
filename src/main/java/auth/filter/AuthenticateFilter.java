@@ -1,5 +1,6 @@
-package auth;
+package auth.filter;
 
+import auth.filter.Authenticator;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import javax.ws.rs.container.ContainerRequestContext;
