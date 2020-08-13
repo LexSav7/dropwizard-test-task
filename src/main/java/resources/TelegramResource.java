@@ -19,7 +19,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 @Path("/v1/message/telegram")
-//TODO make it better
 public class TelegramResource {
 
     @PUT

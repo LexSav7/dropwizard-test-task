@@ -12,7 +12,7 @@ public class Person {
 
     @NotNull
     @Min(1)
-    private Integer age;
+    private int age;
 
     public Person() {
         // Needed by Jackson deserialization
@@ -29,7 +29,7 @@ public class Person {
     }
 
     @JsonProperty
-    public Integer getAge() {
+    public int getAge() {
         return age;
     }
 }
