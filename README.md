@@ -15,6 +15,15 @@ Steps to launch
 4. Start application with `java -jar target/dropwizard-test-task-1.0.0.jar server config-local.yml`
 5. Now you can access the application on `http://localhost:8080/v1/name`
 
+JWT
+---
+To generate JWT token go to the `http://localhost:8080/v1/jwt/generate`. Then enter the following credentials:
+
+Login: `login`
+Password: `password`
+
+You can then access protected resource with JWT token by link `http://localhost:8080/v1/auth`
+
 Deploy with Docker Compose
 ---
 To run application with docker compose, run following in the root directory where docker-compose.yml file exists
