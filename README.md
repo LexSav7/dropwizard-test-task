@@ -19,7 +19,7 @@ JWT
 ---
 To generate JWT token go to the `http://localhost:8080/v1/jwt/generate`. Then enter the following credentials:
 
-Login: `login` \n
+Login: `login`  
 Password: `password`
 
 You can then access protected resource with JWT token by link `http://localhost:8080/v1/auth`
